@@ -1,5 +1,5 @@
 ---
-title: gRPC
+title: gRPCnew
 date: 2024-12-29T10:32:31+08:00
 lastmod: 2024-12-29T10:32:31+08:00
 author: Xuan
