@@ -80,6 +80,6 @@ gRPC 服务也是通过指定 RPC方法参数和返回类型在 proto 文件中�
 
 你好
 
-<center><img src="images/iShot_2024-12-31_12.31.25.png" width="50%" /></center>
+<center><img src="/images/iShot_2024-12-31_12.31.25.png" width="50%" /></center>
 
 你好
