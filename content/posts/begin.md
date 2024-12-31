@@ -17,9 +17,9 @@ tags:
 draft: false
 ---
 
+<!--more-->
+
 gRPC 是Google 于 2016年创建的开源远程过程调用框架，它是对Google内部 RPC 基础设施的重写。但首先，什么是RPC，即远程过程调用？本地过程调用是进程内执行某些代码的函数调用。远程过程调用从用户的角度来看，是使一台机器能够调用另一台机器上的某些代码，就像是本地函数调用一样。
-
-
 
 ![image-20241230203914570](https://pub-d4e50142286f4f989ffda66f9f8614d1.r2.dev/pacificrimblog/2024/12/a94ab8f1715e260ef163cb539c69676a.png)
 
@@ -73,4 +73,8 @@ gRPC 服务也是通过指定 RPC方法参数和返回类型在 proto 文件中�
 
 <img src="https://pub-d4e50142286f4f989ffda66f9f8614d1.r2.dev/pacificrimblog/2024/12/603cee033275ee2f5870499c6ced3060.png" alt="image-20241230210644523" style="zoom: 33%;" />
 
-![](../../static/img/iShot_2024-12-31_12.31.25.png)
+你好
+
+![iShot_2024-12-31_12.31.25](../../static/img/iShot_2024-12-31_12.31.25.png)
+
+你好
