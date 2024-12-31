@@ -35,7 +35,7 @@ gRPC 默认使用Protocol Buffers来编码并通过网络发送数据。虽然 g
 
 1. Protocol Buffers支持强类型架构定义，网络上数据的结构在 proto文件中定义。Protocol Buffers提供广泛的工具支持，将 proto 文件中定义的模式转换为所有流行编程语言的数据访问类。
 
-<img src="https://pub-d4e50142286f4f989ffda66f9f8614d1.r2.dev/pacificrimblog/2024/12/16a5183f28ec1e56063e0f47871c9627.png" alt="image-20241230204156587" style="zoom: 25%;" />
+   <img src=https://pub-d4e50142286f4f989ffda66f9f8614d1.r2.dev/pacificrimblog/2024/12/16a5183f28ec1e56063e0f47871c9627.png width=40% />
 
 gRPC 服务也是通过指定 RPC方法参数和返回类型在 proto 文件中定义的。
 
