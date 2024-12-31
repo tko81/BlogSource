@@ -1,11 +1,11 @@
 ---
-title: gRPCnew
-date: 2024-12-29T10:32:31+08:00
-lastmod: 2024-12-29T10:32:31+08:00
-author: Xuan
+title: GRPCC
+date: 2024-12-31T13:20:43+08:00
+lastmod: 2024-12-31T13:20:43+08:00
+author: Author Name
 # avatar: /img/author.jpg
 # authorlink: https://author.site
-cover: /img/iShot_2024-12-31_12.29.05.png
+cover: /img/cover.jpg
 # images:
 #   - /img/cover.jpg
 categories:
@@ -15,7 +15,6 @@ tags:
   - tag2
 # nolastmod: true
 draft: false
-
 ---
 
 <!--more-->
@@ -82,6 +81,6 @@ gRPC 服务也是通过指定 RPC方法参数和返回类型在 proto 文件中�
 
 iShot_2024-12-31_12.29.05.png
 
-![](/images/iShot_2024-12-31_12.29.05.png)
+![](/img/iShot_2024-12-31_13.22.34.jpg)
 
 你好
