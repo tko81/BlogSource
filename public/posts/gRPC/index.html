@@ -236,7 +236,7 @@
   <meta itemprop="description" content="gRPC 是RPC的一种流行实现。许多组织已采用 gRPC 作为首选RPC 机制来连接在数据中心内和跨数据中心运行的大量微服务。">
   <meta itemprop="datePublished" content="2024-12-31T15:49:34+08:00">
   <meta itemprop="dateModified" content="2024-12-31T15:49:34+08:00">
-  <meta itemprop="wordCount" content="89">
+  <meta itemprop="wordCount" content="91">
   <meta itemprop="keywords" content="GRPC,Http2">
 
       <header>
@@ -336,12 +336,12 @@
 <li>其次，gRPC建立在HTTP/2之上，以提供大规模的高性能基础。HTTP/2的使用带来了很多好处。gRPC 使用HTTP/2 stream。它允许通过单个长寿命TCP连接传输多条消息流。这使得gRPC 框架能够通过客户端和服务器之间的少量TCP连接处理许多并发RPC调用。</li>
 </ol>
 <img src="./pics/e749add15f9b9762b8b5ce849ae82d57-20241231155343007.png" alt="image-20241230205710101" style="zoom:25%;" />
-<p>为了了解gRPC 的工作原理，让我们了解从 gRPC 客户端到gRPC 服务器的典型流程。在此示例中，订单服务是 gRPC 客户端，支付服务是gRPC 服务器。当订单服务向支付服务发出 gRPC调用时，它会在构建时调用由 gRPC 工具生成的客户端代码。生成的客户端代码称为客户端存根。gRPC将传递给客户端存根的数据编码到 Protocol Buffers 中，并将其发送到低级传输层。gRPC 通过网络将数据作为HTTP/2数据帧流发送。由于二进制编码和网络优化，据说gRPC比JSON快5倍。</p>
+<p>为了了解gRPC 的工作原理，让我们了解从 gRPC 客户端到gRPC 服务器的典型流程。在此示例中，订单服务是 gRPC 客户端，支付服务是gRPC 服务器。当订单服务向支付服务发出 gRPC调用时，它会在构建时调用由 gRPC 工具生成的客户端代码。生成的客户端代码称为客户端存根(client stub)。gRPC将传递给客户端存根的数据编码到 Protocol Buffers 中，并将其发送到低级传输层。gRPC 通过网络将数据作为HTTP/2数据帧流发送。由于二进制编码和网络优化，据说gRPC比JSON快5倍。</p>
 <p>支付服务从网络接收数据包，对其进行解码并调用服务器应用程序。从服务器应用程序返回的结果被编码到 Protocol Buffers 中并发送到传输层。订单服务接收数据包、解码并将结果发送到客户端应用程序。</p>
 <img src="./pics/2c848a8eab3dfd6ca083888126ee65ed-20241231155342952.png" alt="image-20241230210348528" style="zoom:25%;" />
-<p>从上面的例子我们看到，gRPC非常容易实现。如果这么简单，为什么我们没有看到Web客户端和 Web服务器之间广泛使用 gRPC？原因之一是gRPC 依赖于对HTTP/2 原语的低级访问。目前没有任何浏览器提供支持gRPC 客户端所需的 Web请求控制级别。可以借助代理从浏览器进行 gRPC调用。这项技术被称为gRPC-Web。但是，该功能集与 gRPC不完全兼容，并且与 gRPC 相比，其使用率仍然较低。</p>
+<p>从上面的例子我们看到，gRPC非常容易实现。如果这么简单，为什么我们没有看到Web客户端和 Web服务器之间广泛使用 gRPC？原因之一是 gRPC 依赖于对HTTP/2 原语的低级访问。目前没有任何浏览器提供支持gRPC 客户端所需的 Web请求控制级别。可以借助代理从浏览器进行 gRPC调用。这项技术被称为gRPC-Web。但是，该功能集与 gRPC不完全兼容，并且与 gRPC 相比，其使用率仍然较低。</p>
 <img src="./pics/19450af909f3691a480500b8ee5854bf-20241231155343055.png" alt="image-20241230210502650" style="zoom:25%;" />
-<p>那么，gRPC的优点在哪里?我们应该何时使用它？gRPC是数据中心内微服务之间首选的服务间通信机制。它对多种编程语言的广泛支持jr使得服务能够选择最适合自身用例的语言和开发者生态系统。我们还看到原生移动客户端中 gRPC的使用越来越多。它的效率和性能在能源和带宽受限的移动设备环境中非常有意义。</p>
+<p>那么，gRPC的优点在哪里?我们应该何时使用它？gRPC是数据中心内微服务之间首选的服务间通信机制。它对多种编程语言的广泛支持使得服务能够选择最适合自身用例的语言和开发者生态系统。我们还看到原生移动客户端中 gRPC的使用越来越多。它的效率和性能在能源和带宽受限的移动设备环境中非常有意义。</p>
 <img src="./pics/603cee033275ee2f5870499c6ced3060-20241231155343030.png" alt="image-20241230210644523" style="zoom: 33%;" />
       </section>
 
