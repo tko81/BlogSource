@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/begin/</loc>
-    <lastmod>2024-12-29T10:32:31+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-12-29T10:32:31+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/category1/</loc>
-    <lastmod>2024-12-29T10:32:31+08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-12-29T10:32:31+08:00</lastmod>
+    <lastmod>2024-12-31T16:14:50+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-12-29T10:32:31+08:00</lastmod>
+    <lastmod>2024-12-31T16:14:50+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tag1/</loc>
-    <lastmod>2024-12-29T10:32:31+08:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-12-31T15:49:34+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tag2/</loc>
-    <lastmod>2024-12-29T10:32:31+08:00</lastmod>
+    <loc>http://localhost:1313/posts/grpc/</loc>
+    <lastmod>2024-12-31T15:49:34+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/grpc/</loc>
+    <lastmod>2024-12-31T15:49:34+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/http2/</loc>
+    <lastmod>2024-12-31T15:49:34+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-12-29T10:32:31+08:00</lastmod>
+    <lastmod>2024-12-31T15:49:34+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/tech/</loc>
+    <lastmod>2024-12-31T15:49:34+08:00</lastmod>
   </url>
 </urlset>

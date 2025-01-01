@@ -42,6 +42,11 @@ headerTitle = "PacificRim"
 
 siteStartYear = 2016
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 # favicon = "favicon.ico"
 
 # Syntax highlighting
